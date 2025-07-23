@@ -14,5 +14,10 @@
     "preversion": "qm-npm-preversion && npm run test"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {},
+  "peerDependencies": {
+    "llqm-framework": "^1.0.0-alpha.0",
+    "llqm-framework-sdk": "^1.0.0-alpha.0",
+    "vue": "^3.0.0"
+  }
 }

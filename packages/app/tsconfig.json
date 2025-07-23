@@ -1,20 +1,7 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "jsx": "preserve",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
-    "skipLibCheck": true,
-    "noEmit": false,
     "paths": {
       "@/*": [
         "./src/*",
@@ -22,12 +9,6 @@
         "./src/*/index.vue"
       ]
     },
-    "allowJs": true,
-    "noImplicitAny": false,
-    "typeRoots": [
-      "./node_modules/@types",
-      "../../exposes-types"
-    ],
     "outDir": "ts-dist"
   },
   "include": [
@@ -37,9 +18,4 @@
     "src/**/*.vue",
     "scripts/*.ts"
   ],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
 }
