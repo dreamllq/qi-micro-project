@@ -2,17 +2,14 @@
   "$schema": "node_modules/llqm-cli/schemas/manifest-schema.json",
   "type": "project",
   "container": {
-    "name": "container",
-    "version": "v0.0.0"
+    "name": "container"
   },
   "apps": [
     {
-      "name": "foundation",
-      "version": "v0.0.0"
+      "name": "foundation"
     },
     {
-      "name": "app",
-      "version": "v0.0.0"
+      "name": "app"
     }
   ]
 }
