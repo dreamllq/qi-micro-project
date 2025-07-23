@@ -1,0 +1,13 @@
+{
+  "type": "container",
+  "dependencies": {
+    "foundation": {
+      "type": "foundation"
+    },
+    "app": {
+      "type": "app"
+    }
+  },
+  "shared": {},
+  "exposes": {}
+}

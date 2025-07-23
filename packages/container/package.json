@@ -1,0 +1,14 @@
+{
+  "name": "container",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "qm serve",
+    "build": "qm build",
+    "preview": "qm preview",
+    "lint": "eslint ./src/**/*.vue ./src/**/*.js --fix",
+    "preversion": "qm-npm-preversion"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
