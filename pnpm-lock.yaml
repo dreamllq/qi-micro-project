@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@vueuse/core':
-        specifier: ^9.13.0
-        version: 9.13.0(vue@3.5.18(typescript@5.8.3))
+        specifier: ^13.5.0
+        version: 13.5.0(vue@3.5.18(typescript@5.8.3))
       axios:
         specifier: ^0.27.2
         version: 0.27.2
@@ -21,17 +21,17 @@ importers:
         specifier: ^2.9.11
         version: 2.10.4(vue@3.5.18(typescript@5.8.3))
       llqm-automation-webpack-plugin:
-        specifier: 1.0.0-alpha.3
-        version: 1.0.0-alpha.3
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6
       llqm-framework:
-        specifier: 1.0.0-alpha.3
-        version: 1.0.0-alpha.3
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6
       llqm-framework-sdk:
-        specifier: 1.0.0-alpha.3
-        version: 1.0.0-alpha.3(vue@3.5.18(typescript@5.8.3))
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6(vue@3.5.18(typescript@5.8.3))
       llqm-vue-permission:
-        specifier: 1.0.0-alpha.3
-        version: 1.0.0-alpha.3(lodash@4.17.21)(simple-deferred2@1.0.4)(vue@3.5.18(typescript@5.8.3))
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6(lodash@4.17.21)(simple-deferred2@1.0.4)(vue@3.5.18(typescript@5.8.3))
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -97,14 +97,14 @@ importers:
         specifier: ^12.5.0
         version: 12.5.0(enquirer@2.4.1)
       llqm-app-types-gen:
-        specifier: 1.0.0-alpha.3
-        version: 1.0.0-alpha.3(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
       llqm-cli:
-        specifier: 1.0.0-alpha.3
-        version: 1.0.0-alpha.3(@babel/core@7.28.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/express@4.17.23)(@types/node@24.1.0)(babel-jest@29.7.0(@babel/core@7.28.0))(jest-util@29.7.0)(postcss@8.5.6)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(vue@3.5.18(typescript@5.8.3))(webpack@5.88.2)
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6(@babel/core@7.28.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/express@4.17.23)(@types/node@24.1.0)(babel-jest@29.7.0(@babel/core@7.28.0))(jest-util@29.7.0)(postcss@8.5.6)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(vue@3.5.18(typescript@5.8.3))(webpack@5.88.2)
       llqm-webpack-config:
-        specifier: 1.0.0-alpha.3
-        version: 1.0.0-alpha.3(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4)
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4)
       nodemon:
         specifier: ^3.0.1
         version: 3.1.10
@@ -118,11 +118,41 @@ importers:
         specifier: ^38.0.0
         version: 38.0.0(stylelint@16.22.0(typescript@5.8.3))
 
-  packages/app: {}
+  packages/app:
+    dependencies:
+      llqm-framework:
+        specifier: ^1.0.0-alpha.0
+        version: 1.0.0-alpha.4
+      llqm-framework-sdk:
+        specifier: ^1.0.0-alpha.0
+        version: 1.0.0-alpha.4(vue@3.5.18(typescript@5.8.3))
+      vue:
+        specifier: ^3.0.0
+        version: 3.5.18(typescript@5.8.3)
 
-  packages/container: {}
+  packages/container:
+    dependencies:
+      llqm-framework:
+        specifier: ^1.0.0-alpha.0
+        version: 1.0.0-alpha.4
+      llqm-framework-sdk:
+        specifier: ^1.0.0-alpha.0
+        version: 1.0.0-alpha.4(vue@3.5.18(typescript@5.8.3))
+      vue:
+        specifier: ^3.0.0
+        version: 3.5.18(typescript@5.8.3)
 
-  packages/foundation: {}
+  packages/foundation:
+    dependencies:
+      llqm-framework:
+        specifier: ^1.0.0-alpha.0
+        version: 1.0.0-alpha.4
+      llqm-framework-sdk:
+        specifier: ^1.0.0-alpha.0
+        version: 1.0.0-alpha.4(vue@3.5.18(typescript@5.8.3))
+      vue:
+        specifier: ^3.0.0
+        version: 3.5.18(typescript@5.8.3)
 
 packages:
 
@@ -1453,6 +1483,9 @@ packages:
   '@types/web-bluetooth@0.0.16':
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
 
+  '@types/web-bluetooth@0.0.21':
+    resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
+
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
 
@@ -1647,11 +1680,24 @@ packages:
   '@vue/shared@3.5.18':
     resolution: {integrity: sha512-cZy8Dq+uuIXbxCZpuLd2GJdeSO/lIzIspC2WtkqIpje5QyFbvLaI5wZtdUjLHjGZrlVX6GilejatWwVYYRc8tA==}
 
+  '@vueuse/core@13.5.0':
+    resolution: {integrity: sha512-wV7z0eUpifKmvmN78UBZX8T7lMW53Nrk6JP5+6hbzrB9+cJ3jr//hUlhl9TZO/03bUkMK6gGkQpqOPWoabr72g==}
+    peerDependencies:
+      vue: ^3.5.0
+
   '@vueuse/core@9.13.0':
     resolution: {integrity: sha512-pujnclbeHWxxPRqXWmdkKV5OX4Wk4YeK7wusHqRwU0Q7EFusHoqNA/aPhB6KCh9hEqJkLAJo7bb0Lh9b+OIVzw==}
 
+  '@vueuse/metadata@13.5.0':
+    resolution: {integrity: sha512-euhItU3b0SqXxSy8u1XHxUCdQ8M++bsRs+TYhOLDU/OykS7KvJnyIFfep0XM5WjIFry9uAPlVSjmVHiqeshmkw==}
+
   '@vueuse/metadata@9.13.0':
     resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
+
+  '@vueuse/shared@13.5.0':
+    resolution: {integrity: sha512-K7GrQIxJ/ANtucxIXbQlUHdB0TPA8c+q5i+zbrjxuhJCnJ9GtBg75sBSnvmLSxHKPg2Yo8w62PWksl9kwH0Q8g==}
+    peerDependencies:
+      vue: ^3.5.0
 
   '@vueuse/shared@9.13.0':
     resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
@@ -3967,38 +4013,46 @@ packages:
       enquirer:
         optional: true
 
-  llqm-app-types-gen@1.0.0-alpha.3:
-    resolution: {integrity: sha512-sm49zMo2iT5nPnsCJ4QAGN4WeEVqzSDtEHqg3cqio05+YVN2vrp/fKCrUjl6P3qoMEMQDT36Rg1Ke/ST1MdxPg==}
+  llqm-app-types-gen@1.0.0-alpha.6:
+    resolution: {integrity: sha512-JMH07hg16WBn2Q29mk6dqiSORi+TtT/AYehhVqC1Ud+2FUAWDEAtL+wAPG4R9Y6neGhHuDJKASA4MoFqLWpMlw==}
     hasBin: true
 
-  llqm-automation-webpack-plugin@1.0.0-alpha.3:
-    resolution: {integrity: sha512-6rDz2VTEB+s+J+TFUAhJERynypvJdTSIZYAFFwCRl65TwFmi1HIt0iBS9w4n+I7EnvtOLJwodzJUTgk4tayd9w==}
+  llqm-automation-webpack-plugin@1.0.0-alpha.6:
+    resolution: {integrity: sha512-ldvnGRCOfOAcDpp8h9wIppNAN52b6zlNmmDMOy44twGNDRBH/3JVm/T6C60By4dkpMCEwsOBuf9EZKJPy1aNoA==}
 
-  llqm-cli@1.0.0-alpha.3:
-    resolution: {integrity: sha512-2X6rgfajn0nF+xyK5t/5JZfhf9WcO6b18nObOjCWCBkVVrwB2IxVyAE7rdBc/bFN2p+3MpOA3GptKNAPQOmp6Q==}
+  llqm-cli@1.0.0-alpha.6:
+    resolution: {integrity: sha512-IkVhssdyA6/1M1Qh8WttynU4qcoWl35wfHoRvVwquz2kRU7lPIW36vNKeg0k1H2zIVsCDYj2kIlEHHRWtW2Y6A==}
     hasBin: true
 
-  llqm-framework-sdk@1.0.0-alpha.3:
-    resolution: {integrity: sha512-MR7SnTH/dRhbJpdh0ne/3e6SUaoaKpVuSZvp6a4sKcD6cGhoPF/LuA9ehReQKwBRuTc2f5QhFjIh5hS2kiRvCQ==}
+  llqm-framework-sdk@1.0.0-alpha.4:
+    resolution: {integrity: sha512-YTS/h1AM67grX97WsDN12ThIBdXHwC6GIOgKnybsZamIBR4IQPSvnbCoEZH+N7OWDesP6t2+xBWY0siEmSBlgQ==}
     peerDependencies:
       vue: 3.x
 
-  llqm-framework@1.0.0-alpha.3:
-    resolution: {integrity: sha512-QNb6xytwj50xNh6dGQZ5t/R+XvKEMX7Vw+ZoEVMHAICSYlHzMBtS8colCypN8dWaygOMiexoGTvZD15y1rDq+Q==}
+  llqm-framework-sdk@1.0.0-alpha.6:
+    resolution: {integrity: sha512-u1/mi615d+MS6oL6jP1xjEZO9PAPi9sF5F1LUQFD6oQ3e2M8rRqJab1uR22gwRw3cT3pFj/VmFonKrDt4y/wSA==}
+    peerDependencies:
+      vue: 3.x
 
-  llqm-trans@1.0.0-alpha.3:
-    resolution: {integrity: sha512-r6TN88J9M3RCW42g9/pv1h0YH90RpOZcfDBMXR7CyUhX87p+ahXKedbm4PDN6XSjqLPw9iWAE7YD2GJ/ncAOIg==}
+  llqm-framework@1.0.0-alpha.4:
+    resolution: {integrity: sha512-HG9PUvMwboj3xst+6NgIR41+2qmWXvIcpXOXqq5sdNZQfQ8wHV2VUjZN/wseDc//MOWFYMLUxCFWY+zOyJ4pxA==}
+
+  llqm-framework@1.0.0-alpha.6:
+    resolution: {integrity: sha512-cSbrcymTg1dLkVf+TJtF0Jac9orMtkiFlbarjZmsU6ojSAbhSY3leERt+nhXTF8dcCmdE9xB2qMwd1EU1KlSXw==}
+
+  llqm-trans@1.0.0-alpha.6:
+    resolution: {integrity: sha512-FIx7IfTUSqvfuDQFV3eMG3wAoNAavNHCvbJY5foN/M72jcaLCb+B8Jp7FcYy6Wcg6AslEgStxoHDgdr77RoRxQ==}
     hasBin: true
 
-  llqm-vue-permission@1.0.0-alpha.3:
-    resolution: {integrity: sha512-RTUVucENDjfWeQtSfdlj3fVmn/PULfzVvUYPMgQjR40pf3wiBL1dEdUKhAkDJRyjxDZZvMLrq4trpvhNMQH1Ow==}
+  llqm-vue-permission@1.0.0-alpha.6:
+    resolution: {integrity: sha512-+RRcdQ5bSmZOHiIaHbGBJyM2ODPsYNDbKna6mPaUOGQqdyRHuRY+jF1OBNFSO9/LyrPoaTFr0BCbi+ghZA/iNQ==}
     peerDependencies:
       lodash: ^4.17.21
       simple-deferred2: ^1.0.4
       vue: 3.x
 
-  llqm-webpack-config@1.0.0-alpha.3:
-    resolution: {integrity: sha512-EY3mkZ+07HT85ujS24g3Qe5Lule2CR3VkLDbx1VfYWF8lIUHKFzrLxGyGQcH16Zp95YdlGDrfRFpqBcV+k0voA==}
+  llqm-webpack-config@1.0.0-alpha.6:
+    resolution: {integrity: sha512-2u2hR5nOYVs6uadXCkXUBdabsVF7gdt6MSjuuEysCw0JVoSoGMB29VlLeaLi/UM+b4VReIX4HeP0+RKpU0WEvA==}
 
   load-json-file@4.0.0:
     resolution: {integrity: sha512-Kx8hMakjX03tiGTLAIdJ+lL0htKnXjEZN6hk/tozf/WOuYGdZBJrZ+rCJRbVCugsjB3jMLn9746NsQIf5VjBMw==}
@@ -7910,6 +7964,8 @@ snapshots:
 
   '@types/web-bluetooth@0.0.16': {}
 
+  '@types/web-bluetooth@0.0.21': {}
+
   '@types/ws@8.18.1':
     dependencies:
       '@types/node': 24.1.0
@@ -8212,6 +8268,13 @@ snapshots:
 
   '@vue/shared@3.5.18': {}
 
+  '@vueuse/core@13.5.0(vue@3.5.18(typescript@5.8.3))':
+    dependencies:
+      '@types/web-bluetooth': 0.0.21
+      '@vueuse/metadata': 13.5.0
+      '@vueuse/shared': 13.5.0(vue@3.5.18(typescript@5.8.3))
+      vue: 3.5.18(typescript@5.8.3)
+
   '@vueuse/core@9.13.0(vue@3.5.18(typescript@5.8.3))':
     dependencies:
       '@types/web-bluetooth': 0.0.16
@@ -8222,7 +8285,13 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
+  '@vueuse/metadata@13.5.0': {}
+
   '@vueuse/metadata@9.13.0': {}
+
+  '@vueuse/shared@13.5.0(vue@3.5.18(typescript@5.8.3))':
+    dependencies:
+      vue: 3.5.18(typescript@5.8.3)
 
   '@vueuse/shared@9.13.0(vue@3.5.18(typescript@5.8.3))':
     dependencies:
@@ -11005,7 +11074,7 @@ snapshots:
     optionalDependencies:
       enquirer: 2.4.1
 
-  llqm-app-types-gen@1.0.0-alpha.3(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3)):
+  llqm-app-types-gen@1.0.0-alpha.6(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3)):
     dependencies:
       '@vue/babel-preset-app': 5.0.8(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
       '@vue/compiler-sfc': 3.5.18
@@ -11018,11 +11087,11 @@ snapshots:
       - supports-color
       - vue
 
-  llqm-automation-webpack-plugin@1.0.0-alpha.3:
+  llqm-automation-webpack-plugin@1.0.0-alpha.6:
     dependencies:
       change-case: 4.1.2
 
-  llqm-cli@1.0.0-alpha.3(@babel/core@7.28.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/express@4.17.23)(@types/node@24.1.0)(babel-jest@29.7.0(@babel/core@7.28.0))(jest-util@29.7.0)(postcss@8.5.6)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(vue@3.5.18(typescript@5.8.3))(webpack@5.88.2):
+  llqm-cli@1.0.0-alpha.6(@babel/core@7.28.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/express@4.17.23)(@types/node@24.1.0)(babel-jest@29.7.0(@babel/core@7.28.0))(jest-util@29.7.0)(postcss@8.5.6)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(vue@3.5.18(typescript@5.8.3))(webpack@5.88.2):
     dependencies:
       '@types/jest': 29.5.14
       bonjour: 3.5.0
@@ -11035,9 +11104,9 @@ snapshots:
       http-proxy-middleware: 2.0.9(@types/express@4.17.23)
       http-server: 14.1.1
       jest: 29.7.0(@types/node@24.1.0)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))
-      llqm-app-types-gen: 1.0.0-alpha.3(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
-      llqm-trans: 1.0.0-alpha.3(@types/node@24.1.0)(typescript@5.8.3)
-      llqm-webpack-config: 1.0.0-alpha.3(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4)
+      llqm-app-types-gen: 1.0.0-alpha.6(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
+      llqm-trans: 1.0.0-alpha.6(@types/node@24.1.0)(typescript@5.8.3)
+      llqm-webpack-config: 1.0.0-alpha.6(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4)
       lodash: 4.17.21
       mime: 3.0.0
       minimist: 1.2.8
@@ -11076,13 +11145,19 @@ snapshots:
       - webpack-bundle-analyzer
       - webpack-dev-server
 
-  llqm-framework-sdk@1.0.0-alpha.3(vue@3.5.18(typescript@5.8.3)):
+  llqm-framework-sdk@1.0.0-alpha.4(vue@3.5.18(typescript@5.8.3)):
     dependencies:
       vue: 3.5.18(typescript@5.8.3)
 
-  llqm-framework@1.0.0-alpha.3: {}
+  llqm-framework-sdk@1.0.0-alpha.6(vue@3.5.18(typescript@5.8.3)):
+    dependencies:
+      vue: 3.5.18(typescript@5.8.3)
 
-  llqm-trans@1.0.0-alpha.3(@types/node@24.1.0)(typescript@5.8.3):
+  llqm-framework@1.0.0-alpha.4: {}
+
+  llqm-framework@1.0.0-alpha.6: {}
+
+  llqm-trans@1.0.0-alpha.6(@types/node@24.1.0)(typescript@5.8.3):
     dependencies:
       axios: 1.10.0
       commander: 11.1.0
@@ -11095,13 +11170,13 @@ snapshots:
       - debug
       - typescript
 
-  llqm-vue-permission@1.0.0-alpha.3(lodash@4.17.21)(simple-deferred2@1.0.4)(vue@3.5.18(typescript@5.8.3)):
+  llqm-vue-permission@1.0.0-alpha.6(lodash@4.17.21)(simple-deferred2@1.0.4)(vue@3.5.18(typescript@5.8.3)):
     dependencies:
       lodash: 4.17.21
       simple-deferred2: 1.0.4
       vue: 3.5.18(typescript@5.8.3)
 
-  llqm-webpack-config@1.0.0-alpha.3(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4):
+  llqm-webpack-config@1.0.0-alpha.6(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4):
     dependencies:
       '@babel/core': 7.28.0
       '@babel/preset-env': 7.28.0(@babel/core@7.28.0)
@@ -11115,8 +11190,8 @@ snapshots:
       dotenv-expand: 10.0.0
       file-loader: 6.2.0(webpack@5.88.2)
       html-webpack-plugin: 5.6.3(webpack@5.88.2)
-      llqm-automation-webpack-plugin: 1.0.0-alpha.3
-      llqm-framework-sdk: 1.0.0-alpha.3(vue@3.5.18(typescript@5.8.3))
+      llqm-automation-webpack-plugin: 1.0.0-alpha.6
+      llqm-framework-sdk: 1.0.0-alpha.6(vue@3.5.18(typescript@5.8.3))
       mini-css-extract-plugin: 2.9.2(webpack@5.88.2)
       postcss-html: 1.8.0
       postcss-loader: 7.3.4(postcss@8.5.6)(typescript@5.8.3)(webpack@5.88.2)
