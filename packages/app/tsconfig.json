@@ -17,5 +17,5 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "scripts/*.ts"
-  ],
+  ]
 }

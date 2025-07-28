@@ -21,17 +21,17 @@ importers:
         specifier: ^2.9.11
         version: 2.10.4(vue@3.5.18(typescript@5.8.3))
       llqm-automation-webpack-plugin:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13
       llqm-framework:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13
       llqm-framework-sdk:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12(vue@3.5.18(typescript@5.8.3))
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13(vue@3.5.18(typescript@5.8.3))
       llqm-vue-permission:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12(lodash@4.17.21)(simple-deferred2@1.0.4)(vue@3.5.18(typescript@5.8.3))
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13(lodash@4.17.21)(simple-deferred2@1.0.4)(vue@3.5.18(typescript@5.8.3))
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -79,26 +79,29 @@ importers:
         specifier: ^8.2.3
         version: 8.2.3(encoding@0.1.13)
       llqm-app-types-gen:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
       llqm-cli:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12(@babel/core@7.28.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/express@4.17.23)(@types/node@24.1.0)(babel-jest@29.7.0(@babel/core@7.28.0))(jest-util@29.7.0)(postcss@8.5.6)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(vue@3.5.18(typescript@5.8.3))(webpack@5.88.2)
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13(@babel/core@7.28.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/express@4.17.23)(@types/node@24.1.0)(babel-jest@29.7.0(@babel/core@7.28.0))(jest-util@29.7.0)(postcss@8.5.6)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(vue@3.5.18(typescript@5.8.3))(webpack@5.88.2)
       llqm-eslint:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12(@typescript-eslint/parser@8.38.0(eslint@9.31.0(jiti@1.21.7))(typescript@5.8.3))(jiti@1.21.7)(typescript@5.8.3)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@1.21.7)))
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13(@typescript-eslint/parser@8.38.0(eslint@9.31.0(jiti@1.21.7))(typescript@5.8.3))(jiti@1.21.7)(typescript@5.8.3)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@1.21.7)))
       llqm-stylelint:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12(postcss-html@1.8.0)(typescript@5.8.3)
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13(postcss-html@1.8.0)(typescript@5.8.3)
       llqm-webpack-config:
-        specifier: 1.0.0-alpha.12
-        version: 1.0.0-alpha.12(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4)
+        specifier: 1.0.0-alpha.13
+        version: 1.0.0-alpha.13(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4)
       nodemon:
         specifier: ^3.0.1
         version: 3.1.10
       stylelint:
         specifier: ^16.22.0
         version: 16.22.0(typescript@5.8.3)
+      vue-tsc:
+        specifier: ^3.0.4
+        version: 3.0.4(typescript@5.8.3)
 
   packages/app:
     dependencies:
@@ -1564,11 +1567,20 @@ packages:
   '@volar/language-core@2.4.15':
     resolution: {integrity: sha512-3VHw+QZU0ZG9IuQmzT68IyN4hZNd9GchGPhbD9+pa8CVv7rnoOZwo7T8weIbrRmihqy3ATpdfXFnqRrfPVK6CA==}
 
+  '@volar/language-core@2.4.20':
+    resolution: {integrity: sha512-dRDF1G33xaAIDqR6+mXUIjXYdu9vzSxlMGfMEwBxQsfY/JMUEXSpLTR057oTKlUQ2nIvCmP9k94A8h8z2VrNSA==}
+
   '@volar/source-map@2.4.15':
     resolution: {integrity: sha512-CPbMWlUN6hVZJYGcU/GSoHu4EnCHiLaXI9n8c9la6RaI9W5JHX+NqG+GSQcB0JdC2FIBLdZJwGsfKyBB71VlTg==}
 
+  '@volar/source-map@2.4.20':
+    resolution: {integrity: sha512-mVjmFQH8mC+nUaVwmbxoYUy8cww+abaO8dWzqPUjilsavjxH0jCJ3Mp8HFuHsdewZs2c+SP+EO7hCd8Z92whJg==}
+
   '@volar/typescript@2.4.15':
     resolution: {integrity: sha512-2aZ8i0cqPGjXb4BhkMsPYDkkuc2ZQ6yOpqwAuNwUoncELqoy5fRgOQtLR9gB0g902iS0NAkvpIzs27geVyVdPg==}
+
+  '@volar/typescript@2.4.20':
+    resolution: {integrity: sha512-Oc4DczPwQyXcVbd+5RsNEqX6ia0+w3p+klwdZQ6ZKhFjWoBP9PCPQYlKYRi/tDemWphW93P/Vv13vcE9I9D2GQ==}
 
   '@vue/babel-helper-vue-jsx-merge-props@1.4.0':
     resolution: {integrity: sha512-JkqXfCkUDp4PIlFdDQ0TdXoIejMtTHP67/pvxlgeY+u5k3LEdKuWZ3LK6xkxo52uDoABIVyRwqVkfLQJhk7VBA==}
@@ -1665,6 +1677,14 @@ packages:
 
   '@vue/language-core@2.2.12':
     resolution: {integrity: sha512-IsGljWbKGU1MZpBPN+BvPAdr55YPkj2nB/TBNGNC32Vy2qLG25DYu/NBN2vNtZqdRbTRjaoYrahLrToim2NanA==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@vue/language-core@3.0.4':
+    resolution: {integrity: sha512-BvueED4LfBCSNH66eeUQk37MQCb7hjdezzGgxniM0LbriW53AJIyLorgshAtStmjfsAuOCcTl/c1b+nz/ye8xQ==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
@@ -1872,6 +1892,9 @@ packages:
 
   alien-signals@1.0.13:
     resolution: {integrity: sha512-OGj9yyTnJEttvzhTUWuscOvtqxq5vrhF7vL9oS0xJ2mK0ItPYP1/y+vCFebfxoEyAz0++1AIwJ5CMr+Fk3nDmg==}
+
+  alien-signals@2.0.5:
+    resolution: {integrity: sha512-PdJB6+06nUNAClInE3Dweq7/2xVAYM64vvvS1IHVHSJmgeOtEdrAGyp7Z2oJtYm0B342/Exd2NT0uMJaThcjLQ==}
 
   ansi-align@3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
@@ -3953,22 +3976,22 @@ packages:
     resolution: {integrity: sha512-cNOjgCnLB+FnvWWtyRTzmB3POJ+cXxTA81LoW7u8JdmhfXzriropYwpjShnz1QLLWsQwY7nIxoDmcPTwphDK9w==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  llqm-app-types-gen@1.0.0-alpha.12:
-    resolution: {integrity: sha512-6ueMWksZ5NKhXI3UixfCLCQFkEOs17ikfZgq/VDBu+Bnvh8lfTi9UqN6UJdVMxL76iZXFtDtrfro1LDMd1G8sg==}
+  llqm-app-types-gen@1.0.0-alpha.13:
+    resolution: {integrity: sha512-gnDAcFrWxrxtRCSgqqx5z92e+7Dz/94hGggln+trvkgCqh06x2hW4KWQK2COVxyEtZFgHwr49es2jpfTQsMjlQ==}
     hasBin: true
 
-  llqm-automation-webpack-plugin@1.0.0-alpha.12:
-    resolution: {integrity: sha512-Ni9jQpST5ctAOunQGaVVHUT1bnkB3/F2BAe9EyBIncPqmFiHDHcog24Lq6EIq8OzcM8YN0VcLRYCZ/M+fxtV4w==}
+  llqm-automation-webpack-plugin@1.0.0-alpha.13:
+    resolution: {integrity: sha512-qMLGeyqQQEladEz6KTTjwkAYgmWUvgHHfmgvpDMkCKabLeDjP6v7BvrDoJ2CARRC3sKO8UkaU4IyKvpZ59MKqA==}
 
-  llqm-cli@1.0.0-alpha.12:
-    resolution: {integrity: sha512-u+p0EkCxXMbyxe6PoC5Qg7ZFfxR6LKNj/VgWMFU5IuWcMKIDh+l0t52IzlB4uoMO7YVM08uSMG6F1Oa7zfGxNw==}
+  llqm-cli@1.0.0-alpha.13:
+    resolution: {integrity: sha512-rxEzTWS1MmC5MpdgrnXX3lyW4QKSKjqGvQN7ZxCt2RGyLrjRW/bxZT/HOuMmNFiKUhMEODsjKPRrRf2IihAWQg==}
     hasBin: true
 
-  llqm-eslint@1.0.0-alpha.12:
-    resolution: {integrity: sha512-/fDlTS0pxKD6mO10cpTcUGqj++V38NvTAMBPkL9eWoWNCuwL46FujJC/6Dpe8BY7Tbo7mmREojq/IynkMlSXyQ==}
+  llqm-eslint@1.0.0-alpha.13:
+    resolution: {integrity: sha512-kjGECRj1VrUTVMR6be7jIbsaaoWoQr67jE+2NdJ/wjgBFKdfC/Ks0NMmrYKiOnJ4tHg3a9RrHuZ4IU5rDrjNEQ==}
 
-  llqm-framework-sdk@1.0.0-alpha.12:
-    resolution: {integrity: sha512-jLssVVg5X3njgnfoxzSOuV6TSJPefjFG80PRuIiJqdPzHHE2UYZED2xUfTFxW9H65QqHCERbwSLofZ8bOyxMqQ==}
+  llqm-framework-sdk@1.0.0-alpha.13:
+    resolution: {integrity: sha512-mX7VnD0VLkO+oADTvdroQZ03GtZhWPorirkhQN2nX81oTJ9Al57iCXJdeGrF9BE17NMAQsyCUdU0ySVf7B1d2w==}
     peerDependencies:
       vue: 3.x
 
@@ -3977,28 +4000,28 @@ packages:
     peerDependencies:
       vue: 3.x
 
-  llqm-framework@1.0.0-alpha.12:
-    resolution: {integrity: sha512-86C+XIOJtg//7OcY/F2HW+PE5vJrs7m3qhnS3ZxslxEzMjBGvYUyd1+65su8nEBYW+Iu9uPzJf9az1vqQoJexA==}
+  llqm-framework@1.0.0-alpha.13:
+    resolution: {integrity: sha512-cTzZhLE+ZTtCtzj/HsEInSwclW66x7tY9Ry9TDYGQxDWjAgtlRI3fyjcr9HRaUv1ydGLwRBTmpsDso+ma5nCBA==}
 
   llqm-framework@1.0.0-alpha.6:
     resolution: {integrity: sha512-cSbrcymTg1dLkVf+TJtF0Jac9orMtkiFlbarjZmsU6ojSAbhSY3leERt+nhXTF8dcCmdE9xB2qMwd1EU1KlSXw==}
 
-  llqm-stylelint@1.0.0-alpha.12:
-    resolution: {integrity: sha512-TCTLlbW+sHqXlJ5fTRN0EcwrC3BfF70dZCWT1C0kUuCKBYhDb5oZ76TgXekGOXyzmu7pq5TL/sf1qYvcuxGi6w==}
+  llqm-stylelint@1.0.0-alpha.13:
+    resolution: {integrity: sha512-n+rM3aUEi4Ib0Gptr2srfd3+zWeQBjFb7/Kvxk4HqA1+y1xVNy7bh0jDBRbSEi6MvLobU7n7Gb5M22MqUmwdtQ==}
 
-  llqm-trans@1.0.0-alpha.12:
-    resolution: {integrity: sha512-bTC0fs0CGJ3i2+AOWgS3TJk2I5dfNG2qqq8uxLlSoDu1adfFKtThTdjNRLY9VI0mePh1ZSlKhWsclOamNc68Uw==}
+  llqm-trans@1.0.0-alpha.13:
+    resolution: {integrity: sha512-D2R+NP0zYXbVRw9DfrKk5+2dbfzvQuay7TRo8SCx8bhAIbE/0rNiqlLkW2IoqqUy0yczpbI/Nn0sNgxlC0d5lw==}
     hasBin: true
 
-  llqm-vue-permission@1.0.0-alpha.12:
-    resolution: {integrity: sha512-MxHqZxad45YAtFcnja++Dae6OjJnf1RlirgfYSZJW6bNRyvlBTgJ2nNrgE2ebyPc58pSkAON2cRGXFG/7m36xw==}
+  llqm-vue-permission@1.0.0-alpha.13:
+    resolution: {integrity: sha512-rcuzx1Gq0UD4lslHFhc0/JxLhpA+2yTzNvutnOYgHr4lL7rIC1ZSMlwc2oetmW5dyn0yInK66/W85uh8EKjriA==}
     peerDependencies:
       lodash: ^4.17.21
       simple-deferred2: ^1.0.4
       vue: 3.x
 
-  llqm-webpack-config@1.0.0-alpha.12:
-    resolution: {integrity: sha512-PtAwD0u9+MpuB11dPBQklcbUQynwHEn7GpI7gdJRT1k2Gps5RA2utvatYgLEqUQ+ujKNCmVIr5ljtCj7c97MiQ==}
+  llqm-webpack-config@1.0.0-alpha.13:
+    resolution: {integrity: sha512-0fWkrGExdcx5g4zW0UfM3uT5kCc7pk4BF721I7h2EEpTB0PfGFPp/yc8CRlEc0Go0ufpoFuuV5IC3ayR4jBKQQ==}
 
   load-json-file@4.0.0:
     resolution: {integrity: sha512-Kx8hMakjX03tiGTLAIdJ+lL0htKnXjEZN6hk/tozf/WOuYGdZBJrZ+rCJRbVCugsjB3jMLn9746NsQIf5VjBMw==}
@@ -5859,6 +5882,12 @@ packages:
 
   vue-tsc@2.2.12:
     resolution: {integrity: sha512-P7OP77b2h/Pmk+lZdJ0YWs+5tJ6J2+uOQPo7tlBnY44QqQSPYvS0qVT4wqDJgwrZaLe47etJLLQRFia71GYITw==}
+    hasBin: true
+    peerDependencies:
+      typescript: '>=5.0.0'
+
+  vue-tsc@3.0.4:
+    resolution: {integrity: sha512-kZmSEjGtROApVBuaIcoprrXZsFNGon5ggkTJokmhQ/H1hMzCFRPQ0Ed8IHYFsmYJYvHBcdmEQVGVcRuxzPzNbw==}
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
@@ -7985,11 +8014,23 @@ snapshots:
     dependencies:
       '@volar/source-map': 2.4.15
 
+  '@volar/language-core@2.4.20':
+    dependencies:
+      '@volar/source-map': 2.4.20
+
   '@volar/source-map@2.4.15': {}
+
+  '@volar/source-map@2.4.20': {}
 
   '@volar/typescript@2.4.15':
     dependencies:
       '@volar/language-core': 2.4.15
+      path-browserify: 1.0.1
+      vscode-uri: 3.1.0
+
+  '@volar/typescript@2.4.20':
+    dependencies:
+      '@volar/language-core': 2.4.20
       path-browserify: 1.0.1
       vscode-uri: 3.1.0
 
@@ -8162,6 +8203,19 @@ snapshots:
       minimatch: 9.0.5
       muggle-string: 0.4.1
       path-browserify: 1.0.1
+    optionalDependencies:
+      typescript: 5.8.3
+
+  '@vue/language-core@3.0.4(typescript@5.8.3)':
+    dependencies:
+      '@volar/language-core': 2.4.20
+      '@vue/compiler-dom': 3.5.18
+      '@vue/compiler-vue2': 2.7.16
+      '@vue/shared': 3.5.18
+      alien-signals: 2.0.5
+      muggle-string: 0.4.1
+      path-browserify: 1.0.1
+      picomatch: 4.0.3
     optionalDependencies:
       typescript: 5.8.3
 
@@ -8399,6 +8453,8 @@ snapshots:
       require-from-string: 2.0.2
 
   alien-signals@1.0.13: {}
+
+  alien-signals@2.0.5: {}
 
   ansi-align@3.0.1:
     dependencies:
@@ -10888,7 +10944,7 @@ snapshots:
 
   lines-and-columns@2.0.3: {}
 
-  llqm-app-types-gen@1.0.0-alpha.12(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3)):
+  llqm-app-types-gen@1.0.0-alpha.13(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3)):
     dependencies:
       '@vue/babel-preset-app': 5.0.8(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
       '@vue/compiler-sfc': 3.5.18
@@ -10901,11 +10957,11 @@ snapshots:
       - supports-color
       - vue
 
-  llqm-automation-webpack-plugin@1.0.0-alpha.12:
+  llqm-automation-webpack-plugin@1.0.0-alpha.13:
     dependencies:
       change-case: 4.1.2
 
-  llqm-cli@1.0.0-alpha.12(@babel/core@7.28.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/express@4.17.23)(@types/node@24.1.0)(babel-jest@29.7.0(@babel/core@7.28.0))(jest-util@29.7.0)(postcss@8.5.6)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(vue@3.5.18(typescript@5.8.3))(webpack@5.88.2):
+  llqm-cli@1.0.0-alpha.13(@babel/core@7.28.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/express@4.17.23)(@types/node@24.1.0)(babel-jest@29.7.0(@babel/core@7.28.0))(jest-util@29.7.0)(postcss@8.5.6)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))(typescript@5.8.3)(vue@3.5.18(typescript@5.8.3))(webpack@5.88.2):
     dependencies:
       '@types/jest': 29.5.14
       bonjour: 3.5.0
@@ -10918,9 +10974,9 @@ snapshots:
       http-proxy-middleware: 2.0.9(@types/express@4.17.23)
       http-server: 14.1.1
       jest: 29.7.0(@types/node@24.1.0)(ts-node@10.9.1(@types/node@24.1.0)(typescript@5.8.3))
-      llqm-app-types-gen: 1.0.0-alpha.12(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
-      llqm-trans: 1.0.0-alpha.12(@types/node@24.1.0)(typescript@5.8.3)
-      llqm-webpack-config: 1.0.0-alpha.12(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4)
+      llqm-app-types-gen: 1.0.0-alpha.13(@babel/core@7.28.0)(vue@3.5.18(typescript@5.8.3))
+      llqm-trans: 1.0.0-alpha.13(@types/node@24.1.0)(typescript@5.8.3)
+      llqm-webpack-config: 1.0.0-alpha.13(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4)
       lodash: 4.17.21
       mime: 3.0.0
       minimist: 1.2.8
@@ -10959,7 +11015,7 @@ snapshots:
       - webpack-bundle-analyzer
       - webpack-dev-server
 
-  llqm-eslint@1.0.0-alpha.12(@typescript-eslint/parser@8.38.0(eslint@9.31.0(jiti@1.21.7))(typescript@5.8.3))(jiti@1.21.7)(typescript@5.8.3)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@1.21.7))):
+  llqm-eslint@1.0.0-alpha.13(@typescript-eslint/parser@8.38.0(eslint@9.31.0(jiti@1.21.7))(typescript@5.8.3))(jiti@1.21.7)(typescript@5.8.3)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@1.21.7))):
     dependencies:
       '@eslint/js': 9.31.0
       eslint: 9.31.0(jiti@1.21.7)
@@ -10973,7 +11029,7 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  llqm-framework-sdk@1.0.0-alpha.12(vue@3.5.18(typescript@5.8.3)):
+  llqm-framework-sdk@1.0.0-alpha.13(vue@3.5.18(typescript@5.8.3)):
     dependencies:
       vue: 3.5.18(typescript@5.8.3)
 
@@ -10981,11 +11037,11 @@ snapshots:
     dependencies:
       vue: 3.5.18(typescript@5.8.3)
 
-  llqm-framework@1.0.0-alpha.12: {}
+  llqm-framework@1.0.0-alpha.13: {}
 
   llqm-framework@1.0.0-alpha.6: {}
 
-  llqm-stylelint@1.0.0-alpha.12(postcss-html@1.8.0)(typescript@5.8.3):
+  llqm-stylelint@1.0.0-alpha.13(postcss-html@1.8.0)(typescript@5.8.3):
     dependencies:
       stylelint: 16.22.0(typescript@5.8.3)
       stylelint-config-recommended-vue: 1.6.1(postcss-html@1.8.0)(stylelint@16.22.0(typescript@5.8.3))
@@ -10994,7 +11050,7 @@ snapshots:
       - supports-color
       - typescript
 
-  llqm-trans@1.0.0-alpha.12(@types/node@24.1.0)(typescript@5.8.3):
+  llqm-trans@1.0.0-alpha.13(@types/node@24.1.0)(typescript@5.8.3):
     dependencies:
       axios: 1.11.0
       commander: 11.1.0
@@ -11007,13 +11063,13 @@ snapshots:
       - debug
       - typescript
 
-  llqm-vue-permission@1.0.0-alpha.12(lodash@4.17.21)(simple-deferred2@1.0.4)(vue@3.5.18(typescript@5.8.3)):
+  llqm-vue-permission@1.0.0-alpha.13(lodash@4.17.21)(simple-deferred2@1.0.4)(vue@3.5.18(typescript@5.8.3)):
     dependencies:
       lodash: 4.17.21
       simple-deferred2: 1.0.4
       vue: 3.5.18(typescript@5.8.3)
 
-  llqm-webpack-config@1.0.0-alpha.12(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4):
+  llqm-webpack-config@1.0.0-alpha.13(postcss@8.5.6)(vue@3.5.18(typescript@5.8.3))(webpack-cli@5.1.4):
     dependencies:
       '@babel/core': 7.28.0
       '@babel/preset-env': 7.28.0(@babel/core@7.28.0)
@@ -11027,8 +11083,8 @@ snapshots:
       dotenv-expand: 10.0.0
       file-loader: 6.2.0(webpack@5.88.2)
       html-webpack-plugin: 5.6.3(webpack@5.88.2)
-      llqm-automation-webpack-plugin: 1.0.0-alpha.12
-      llqm-framework-sdk: 1.0.0-alpha.12(vue@3.5.18(typescript@5.8.3))
+      llqm-automation-webpack-plugin: 1.0.0-alpha.13
+      llqm-framework-sdk: 1.0.0-alpha.13(vue@3.5.18(typescript@5.8.3))
       mini-css-extract-plugin: 2.9.2(webpack@5.88.2)
       postcss-html: 1.8.0
       postcss-loader: 7.3.4(postcss@8.5.6)(typescript@5.8.3)(webpack@5.88.2)
@@ -13020,6 +13076,12 @@ snapshots:
     dependencies:
       '@volar/typescript': 2.4.15
       '@vue/language-core': 2.2.12(typescript@5.8.3)
+      typescript: 5.8.3
+
+  vue-tsc@3.0.4(typescript@5.8.3):
+    dependencies:
+      '@volar/typescript': 2.4.20
+      '@vue/language-core': 3.0.4(typescript@5.8.3)
       typescript: 5.8.3
 
   vue@3.5.18(typescript@5.8.3):
