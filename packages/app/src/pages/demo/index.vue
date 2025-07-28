@@ -1,5 +1,11 @@
 <template>
-  <div id="app" :a="1" class="a" :s="2">dome</div>
+  <div
+    id='app'
+    :a='1'
+    class='a'
+    :s='2'>
+    dome
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -8,9 +14,8 @@ const a = 1;
 
 <style scoped lang="scss">
 .a {
+  font-size: 0;
   color: red;
-  font-size: 20px;
-  background-attachment: fixed;
 }
 </style>
 

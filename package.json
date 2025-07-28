@@ -4,15 +4,15 @@
   "scripts": {
     "start": "qm serve -p 8080",
     "dev": "nodemon",
+    "dev:build": "npm run clear-build && npm run build-micro && npm run copy-all-dist",
     "preversion": "qm-npm-preversion",
     "gen-version": "node ./gen-version.js",
     "gen-expose-types": "rm -rf ./exposes-types && mkdir ./exposes-types && lerna run gen-expose-types --concurrency=1",
     "build-micro": "lerna run build",
     "build-web": "npm run gen-version && qm build",
-    "build-dev": "npm run clear-build && npm run build-micro && npm run copy-all-dist",
-    "build": "npm run clear-dist && npm run build-dev && npm run build-web",
+    "build": "npm run clear-dist && npm run dev:build && npm run build-web",
     "copy-container": "mkdir ./public && lerna exec --scope container -- cp -r ./dist/ ../../public",
-    "copy-apps": "mkdir ./public/app && lerna exec --scope='{app,foundation}' -- mkdir ../../public/app/\\$LERNA_PACKAGE_NAME && lerna exec --scope='{app,foundation}' -- cp -r ./dist/ ../../public/app/\\$LERNA_PACKAGE_NAME",
+    "copy-apps": "mkdir ./public/app && lerna exec --ignore=container -- mkdir ../../public/app/\\$LERNA_PACKAGE_NAME && lerna exec --ignore=container -- cp -r ./dist/ ../../public/app/\\$LERNA_PACKAGE_NAME",
     "clear-build": "rm -rf ./public",
     "clear-dist": "rm -rf ./dist",
     "copy-all-dist": "npm run copy-container && npm run copy-apps"
@@ -25,10 +25,10 @@
     "axios": "^0.27.2",
     "change-case": "^4.1.2",
     "element-plus": "^2.9.11",
-    "llqm-automation-webpack-plugin": "1.0.0-alpha.7",
-    "llqm-framework": "1.0.0-alpha.7",
-    "llqm-framework-sdk": "1.0.0-alpha.7",
-    "llqm-vue-permission": "1.0.0-alpha.7",
+    "llqm-automation-webpack-plugin": "1.0.0-alpha.12",
+    "llqm-framework": "1.0.0-alpha.12",
+    "llqm-framework-sdk": "1.0.0-alpha.12",
+    "llqm-vue-permission": "1.0.0-alpha.12",
     "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.43",
@@ -45,12 +45,13 @@
   },
   "devDependencies": {
     "eslint": "^9.31.0",
-    "llqm-app-types-gen": "1.0.0-alpha.7",
-    "llqm-cli": "1.0.0-alpha.7",
-    "llqm-eslint": "1.0.0-alpha.7",
-    "llqm-webpack-config": "1.0.0-alpha.7",
+    "lerna": "^8.2.3",
+    "llqm-app-types-gen": "1.0.0-alpha.12",
+    "llqm-cli": "1.0.0-alpha.12",
+    "llqm-eslint": "1.0.0-alpha.12",
+    "llqm-stylelint": "1.0.0-alpha.12",
+    "llqm-webpack-config": "1.0.0-alpha.12",
     "nodemon": "^3.0.1",
-    "stylelint": "^16.22.0",
-    "stylelint-config-standard-scss": "^15.0.1"
+    "stylelint": "^16.22.0"
   }
 }
