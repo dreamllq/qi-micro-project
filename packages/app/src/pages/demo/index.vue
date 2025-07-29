@@ -1,22 +1,30 @@
 <template>
-  <div
-    id='app'
-    :a='1'
-    class='a'
-    :s='2'>
-    dome
+  <div>
+    <div>{{ $t('确认') }}</div>
+    <el-button @click='onCommand(Language.EN)'>
+      en
+    </el-button>
+    <el-button @click='onCommand(Language.JA)'>
+      ja
+    </el-button>
+    <el-button @click='onCommand(Language.ZH_CN)'>
+      zh-cn
+    </el-button>
   </div>
 </template>
 
 <script setup lang="ts">
-const a = 1;
+import { setLanguage, Language, i18n } from 'llqm-framework-sdk';
+import { nextTick } from 'vue';
+const onCommand = async (command) => {
+  setLanguage(command);
+  // sessionStorage.removeItem('alsi-scope-aps-router-tab');
+  window.location.reload();
+};
 </script>
 
-<style scoped lang="scss">
-.a {
-  font-size: 0;
-  color: red;
-}
+<style scoped>
+
 </style>
 
 <route>
