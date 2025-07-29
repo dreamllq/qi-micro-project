@@ -1,5 +1,4 @@
-import { MenuConfig } from '@/type';
 // import { i18n } from 'llqm-framework-sdk';
 
-const menu:MenuConfig = {};
+const menu = {};
 export default menu;
