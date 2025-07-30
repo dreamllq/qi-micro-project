@@ -1,14 +1,11 @@
 import { default as foundationStart } from 'foundation/start';
-import { Language, setEnv } from 'llqm-framework-sdk';
+import { setEnv } from 'llqm-framework-sdk';
+import bcp47 from 'bcp47';
 
 export default {
   start: () => {
     setEnv({ RUNTIME_ENV: window.__APS_ENV__.RUNTIME_ENV });
     foundationStart();
   },
-  messagesLoaders: {
-    [Language.ZH_CN]: () => import('./locales/zh-cn'),
-    [Language.EN]: () => import('./locales/en'),
-    [Language.JA]: () => import('./locales/ja')
-  }
+  langTransform: (lang: string) => bcp47.parse(lang).langtag.language.language
 };

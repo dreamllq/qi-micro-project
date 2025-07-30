@@ -6,7 +6,7 @@
     "dev": "qm serve",
     "build": "qm build",
     "preview": "qm preview",
-    "trans": "qm trans",
+    "trans": "qm-trans -cn src/locales/zh/index.ts -en src/locales/en/index.ts -ja src/locales/ja/index.ts -o src/locales",
     "gen-expose-types": "qm types-gen -o ../../exposes-types",
     "type-check": "vue-tsc --noEmit -p tsconfig.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",

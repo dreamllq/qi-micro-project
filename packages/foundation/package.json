@@ -10,7 +10,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "test": "qm test",
-    "trans": "qm trans"
+    "trans": "qm-trans -cn src/locales/zh/index.ts -en src/locales/en/index.ts -ja src/locales/ja/index.ts -o src/locales"
   },
   "dependencies": {},
   "devDependencies": {},
