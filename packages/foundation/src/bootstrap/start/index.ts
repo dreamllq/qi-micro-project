@@ -2,7 +2,7 @@ import directives from './directives';
 import { permissionOptions } from './permission';
 import { start } from 'llqm-framework';
 import Layout from '@/components/layout/index.vue';
-import { i18n, global, appsData } from 'llqm-framework-sdk';
+import { i18n, appsData } from 'llqm-framework-sdk';
 
 export default () => {
   start({
@@ -13,15 +13,9 @@ export default () => {
     permissionOptions,
     routes: appsData.routes,
     getLoginUser: async () => ({ user: 1 }),
-    beforeLayoutMount: async ({ userInfo }) => {
-      
-    },
-    beforeMount: ({
-      app, router, i18n, permission 
-    }) => {
+    beforeLayoutMount: async () => {},
+    beforeMount: ({ app }) => {
       app.use(directives);
-      router.beforeEach((to, from) => {
-      });
     }
   });
 };

@@ -12,6 +12,10 @@ module.exports = {
     {
       'name': 'ja',
       'lang': 'jp'
+    },
+    {
+      'name': 'de',
+      'lang': 'de'
     }
   ]
 };

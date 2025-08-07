@@ -7,8 +7,8 @@
     <el-button @click="onCommand('ja')">
       ja
     </el-button>
-    <el-button @click="onCommand('zh-CN')">
-      zh-cn
+    <el-button @click="onCommand('zh')">
+      zh
     </el-button>
     <el-button @click="onCommand('de')">
       de
@@ -17,11 +17,9 @@
 </template>
 
 <script setup lang="ts">
-import { setLanguage, i18n } from 'llqm-framework-sdk';
-import { nextTick } from 'vue';
+import { setLanguage } from 'llqm-framework-sdk';
 const onCommand = async (command) => {
   setLanguage(command);
-  // sessionStorage.removeItem('alsi-scope-aps-router-tab');
   window.location.reload();
 };
 </script>
